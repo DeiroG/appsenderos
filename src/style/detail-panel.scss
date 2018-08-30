@@ -1,0 +1,66 @@
+
+@import 'variables';
+
+#detailPanel {
+  overflow-y: auto;
+
+  h1 {
+    padding-top: 0;
+  }
+
+  #detailElevationProfile {
+    margin: 20px 0 0 0;
+    width: 100%;
+    height: 200px;
+
+  }
+
+  #detailDescription {
+    margin: 20px;
+    line-height: $big-font;
+  }
+
+  #detailInfograph {
+    padding-top: 10px;
+    text-align: center;
+
+    .infograph {
+      padding: 5px;
+    }
+    .fa {
+      padding-right: 2px;
+    }
+
+    .fa-calendar-times-o {
+      color: #d98c8c;
+    }
+
+    .fa-calendar-check-o {
+      color: #7dad7c;
+    }
+  }
+}
+
+@media (max-width: $max-width) {
+  #detailPanel {
+    h1 {
+      text-align: left;
+      padding: 10px 0 10px 20px;
+    }
+
+    #detailInfograph {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    #detailDescription {
+      display: none;
+    }
+
+    #detailElevationProfile {
+      margin: 0;
+      width: 100%;
+      height: 120px;
+    }
+  }
+}
